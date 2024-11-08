@@ -9,7 +9,7 @@
             Minecraft Saber Fonts - Free Fontpack Download
         </h1>
         <h2 style="text-align: center;">Download the
-        <a id="download" href="https://1drv.ms/u/c/e10b5c8760d674b5/ERiWUs4QxOtEloe1xZwIYp4BjJRrN7jOYhA1vyA4Dh2gKQ?e=I42tof"> Minecraft Lightsaber Soundfont Pack</a>  here!
+        <a id="download" href="https://1drv.ms/u/c/e10b5c8760d674b5/ERiWUs4QxOtEloe1xZwIYp4BjJRrN7jOYhA1vyA4Dh2gKQ?e=I42tof" target = "_blank"> Minecraft Lightsaber Soundfont Pack</a>  here!
         </h2>
         <h3 style="text-align: center;">
             It's Completely Free!
@@ -23,35 +23,4 @@
             <source src=" Link for Video Goes Here " type="video/mp4">
             </video>
         </center>
-        <li style="text-align: center;">
-        <div class="comment">
-            <textarea id="title" type="text "rows="20" cols="150" onkeyup="Allow()" placeholder="write a comment......"></textarea>
-            <input type="submit" value="Post" onclick="insert()" style="width:20px;" /></form>
-            </div>
-            <div id="display"></div>
-            <script type="text/javascript">
-            var titles = [];
-            var titleInput = document.getElementById("title");
-            var messageBox = document.getElementById("display");
-            function Allow()
-            {
-            if (!user.title.value.match(/[a-zA-Z]$/) && user.title.value !="")
-            {
-            user.title.value="";
-            alert("Please Enter only alphabets");
-            }
-            window.location.reload()
-            }
-            function insert () {
-            titles.push(titleInput.value);
-            clearAndShow();
-            }
-            function clearAndShow ()
-            {
-            titleInput.value = "";
-            messageBox.innerHTML = "";
-            messageBox.innerHTML += " " + titles.join("<br/> ") + "<br/>";
-            }
-            </script>
-            </li>
 </html>
